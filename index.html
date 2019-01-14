@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="css/images/logo.png" alt="" id="logo">
+            <p id="logotext">Урфу абитуриенту</p>
+        </div>
+    </div>
+</section>
+<section class="main">
+    <div class="container">
+        <div class="description">
+            <h1>Узнать свой рейтинг сейчас!</h1>
+            <div class="line"></div>
+        </div>
+        <div class="inputnumber">
+            <input type="number" id="input" placeholder="Введите свой регистрационный номер" required>
+            <button id="inputbutton"><i class="fa fa-search fa-1.5x"></i></button>
+        </div>
+        <div class="selectbox">
+            <select id="mounth">
+                <option value="hide">Выбрать направление подготовки</option>
+                <option value="" >03.03.03 Информатика и вычислительная техника</option>
+                <option value="" >03.03.03 Информатика и вычислительная техника</option>
+                <option value="" >03.03.03 Информатика и вычислительная техника</option>
+                <option value="" >03.03.03 Информатика и вычислительная техника</option>
+            </select>
+        </div>
+        <div class="selectradio">
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Выбрать направление подготовки</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row"><input type="radio" name="way"></th>
+                        <td>03.03.03 Информатика и вычислительная техника</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input type="radio" name="way"></th>
+                        <td>03.03.03 Информатика и вычислительная техника</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input type="radio" name="way"></th>
+                        <td>03.03.03 Информатика и вычислительная техника</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="information">
+            <ul id="myTab2" class="nav nav-tabs">
+                <li><a data-toggle="tab" href="#panely1">Статистика</a></li>
+                <li><a data-toggle="tab" href="#panely2">Список</a></li>
+                <li><a data-toggle="tab" href="#panely3">Данные</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="panely1" class="tab-pane fade in active">
+                    <div class="statgroup">
+                        <div class="statblock">
+                            <p class="stat">1</p>
+                            <h3>Вы в рейтинге</h3>
+                        </div>
+
+                        <div class="statblock">
+                            <p class="stat">1</p>
+                            <h3>Всего поступающих</h3>
+
+                        </div>
+
+                        <div class="statblock">
+                            <p class="stat">1</p>
+                            <h3>Бюджетных мест</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="panely2" class="tab-pane fade">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">№</th>
+                            <th scope="col">Абитуриент</th>
+                            <th scope="col">Общий балл</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Быков Павел Андреевич</td>
+                            <td>189</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Тен Юрий Менович</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Плетенёв Максим Даниилович</td>
+                            <td>225</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="panely3" class="tab-pane fade">
+                    <!--<div class="info">-->
+                        <!--<div class="blockgroup">-->
+                            <!--<div class="infoblock">-->
+                                <!--<p class="info">Быков Павел Андреевич</p>-->
+                                <!--<h3>ФИО</h3>-->
+                            <!--</div>-->
+                            <!--<div class="infoblock">-->
+                                <!--<p class="info">123456</p>-->
+                                <!--<h3>Регистрационный номер</h3>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="blockgroup">-->
+                            <!--<div class="infoblock">-->
+                                <!--<p class="info">КТ</p>-->
+                                <!--<h3>Тип вступительных испытаний</h3>-->
+                            <!--</div>-->
+                            <!--<div class="infoblock">-->
+                                <!--<p class="info">220</p>-->
+                                <!--<h3>Всего баллов</h3>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="blockgroup">-->
+                            <!--<div class="infoblock">-->
+                                <!--<p class="info">90</p>-->
+                                <!--<h3>Русский язык</h3>-->
+                            <!--</div>-->
+                            <!--<div class="infoblock">-->
+                                <!--<p class="info">100</p>-->
+                                <!--<h3>Математика</h3>-->
+                            <!--</div>-->
+                            <!--<div class="infoblock">-->
+                                <!--<p class="info">70</p>-->
+                                <!--<h3>Информатика</h3>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <table class="table table-striped">
+                        <tbody>
+                        <tr>
+                            <th scope="row">ФИО</th>
+                            <td>Быков Павел Андреевич</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Регистрационный номер</th>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Тип вступительных испытаний</th>
+                            <td>КТ</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Выбранное направление подготовки</th>
+                            <td>01.01.01 Информатика и вычислительная техника</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">*** Баллы вступительных испытаний ***</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Русский язык</th>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Математика</th>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Информатика</th>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Физика</th>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Балл личных достижений</th>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">*** Выбранные направления подготовки ***</th>
+                            <td>*** Баллы ***</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">01.01.01 Информатика и вычислительная техника</th>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">09.09.09 Ядерная физика</th>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">08.08.08</th>
+                            <td>Прикладная математика</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="vote">
+            <span class="likes "><i class="fa fa-heart likeme"></i> 40</span>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="vote">
+            <span class="likes liked"><i class="fa fa-heart "></i> 40</span>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--form mask-->
+<script src="js/jquery.maskedinput.min.js"></script>
+<!--end form mask-->
+<script src="js/script.js"></script>
+<script src="js/select.js"></script>
+</body>
+</html>
