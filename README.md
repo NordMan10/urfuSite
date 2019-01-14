@@ -1,2 +1,2 @@
 # urfuSite
-It's dite for urfu project
+It's site for urfu project
